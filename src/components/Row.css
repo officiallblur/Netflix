@@ -1,0 +1,71 @@
+.row {
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.row h2 {
+  margin-left: 20px;
+}
+
+.row-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.row-poster {
+  max-height: 200px;
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.row-poster:hover {
+  transform: scale(1.08);
+}
+
+/* Scroll buttons */
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%) scale(1.2);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}

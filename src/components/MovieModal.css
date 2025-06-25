@@ -1,0 +1,44 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  background: #111;
+  color: white;
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+  outline: none;
+}
+
+.modal img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.modal h2 {
+  margin-bottom: 0.5rem;
+}
+
+.modal p {
+  margin-bottom: 0.5rem;
+}
+
+.close-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
